@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="371dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#4CAF50"
+            android:gravity="center"
+            android:text="DATA LOKASI SAAT INI"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="NAMA"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:orientation="vertical"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editNama"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:ems="9"
+            android:layout_gravity="center"
+            android:minHeight="10dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/AlamatLengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="ALAMAT"
+            android:textAlignment="center"
+            android:orientation="vertical"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Wilayah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="WILAYAH"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/NamaNegara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="295dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="NAMA NEGARA"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="350dp"
+            android:backgroundTint="#FF9800"
+            android:text="Dapatkan Lokasi"
+            android:textColor="#FBFBFB"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_compile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="245dp"
+            android:layout_marginTop="350dp"
+            android:backgroundTint="#FF9800"
+            android:text="Compile"
+            android:textColor="#FBFBFB"
+            android:textSize="16sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="371dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="130dp"
+            android:text=" FILE DATA "
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="90dp"
+            android:ems="90"
+            android:hint="Isikan nama file"
+            android:inputType="textPersonName"
+            android:minHeight="30dp" />
+
+        <EditText
+            android:id="@+id/editTeksCatatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp"
+            android:backgroundTint="@color/white"
+            android:ems="90"
+            android:gravity="start|top"
+            android:hint="Isi file disini"
+            android:inputType="textLongMessage|textMultiLine"
+            android:lines="7" />
+
+        <Button
+            android:id="@+id/btnWrite"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="250dp"
+            android:theme="@style/buttonstyle1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Tulis" />
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="250dp"
+            android:theme="@style/buttonstyle1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Baca" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="250dp"
+            android:theme="@style/buttonstyle1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Hapus" />
+
+        <ImageButton
+            android:id="@+id/btnshare"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="195dp"
+            android:background="@drawable/share" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
